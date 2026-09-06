@@ -23,6 +23,7 @@ body{
     --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
 }
 
+
 /* =========================
    NAVBAR NEXORA
 ========================= */
@@ -31,19 +32,24 @@ body{
     width: 100%;
     height: 75px;
     padding: 0 7%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     background: rgba(255, 255, 255, 0.95);
+
     border-bottom: 1px solid #dbeafe;
+
     box-shadow: 0 4px 20px rgba(59, 130, 246, 0.08);
 
     position: fixed;
     top: 0;
     left: 0;
+
     z-index: 1000;
 }
+
 
 /* =========================
    LOGO
@@ -52,7 +58,9 @@ body{
 .Logo1 {
     font-size: 1.8rem;
     font-weight: 700;
+
     color: #3b82f6;
+
     text-decoration: none;
     letter-spacing: -0.5px;
 
@@ -79,18 +87,25 @@ body{
     position: relative;
 
     color: #334155;
+
     text-decoration: none;
+
     font-size: 0.95rem;
     font-weight: 500;
 
     padding: 10px 14px;
+
     border-radius: 10px;
 
     transition: all 0.3s ease;
 }
 
 
-/* Efecto hover */
+/* =========================
+   HOVER
+   ESTA ES LA ANIMACIÓN
+   DEL PRIMER CSS
+========================= */
 
 .navbar1 a:hover {
     color: #2563eb;
@@ -104,11 +119,13 @@ body{
     content: "";
 
     position: absolute;
+
     left: 14px;
     right: 14px;
     bottom: 5px;
 
     height: 2px;
+
     border-radius: 10px;
 
     background: #60a5fa;
@@ -125,18 +142,30 @@ body{
 
 
 /* =========================
-   MENU HAMBURGUESA
+   CHECKBOX
+========================= */
+
+#check1 {
+    display: none;
+}
+
+
+/* =========================
+   ICONOS
 ========================= */
 
 .icons1 {
     display: none;
+
     font-size: 2rem;
+
     color: #2563eb;
+
     cursor: pointer;
 }
 
-#check1 {
-    display: none;
+#menu-icon1 {
+    display: block;
 }
 
 #close-icon1 {
@@ -154,11 +183,20 @@ body{
         padding: 0 5%;
     }
 
+
+    /* Mostrar hamburguesa */
+
     .icons1 {
         display: block;
     }
 
+
+    /* =========================
+       MENÚ CERRADO
+    ========================= */
+
     .navbar1 {
+
         position: absolute;
 
         top: 75px;
@@ -167,39 +205,68 @@ body{
         width: 100%;
 
         background: rgba(255, 255, 255, 0.98);
+
         backdrop-filter: blur(10px);
 
         flex-direction: column;
+
         align-items: stretch;
+
+        gap: 5px;
 
         padding: 15px 5%;
 
         box-shadow: 0 10px 25px rgba(59, 130, 246, 0.1);
 
-        transform: translateY(-20px);
+
+        /* Oculto */
+
         opacity: 0;
+
+        visibility: hidden;
+
+        transform: translateY(-20px);
+
         pointer-events: none;
 
-        transition: all 0.3s ease;
+        transition:
+            opacity 0.3s ease,
+            transform 0.3s ease,
+            visibility 0.3s ease;
     }
 
+
+    /* Enlaces del menú móvil */
+
     .navbar1 a {
+
         width: 100%;
+
         text-align: center;
+
         padding: 13px;
     }
 
 
-    /* Mostrar menú */
+    /* =========================
+       ABRIR MENÚ
+    ========================= */
 
     #check1:checked ~ .navbar1 {
-        transform: translateY(0);
+
         opacity: 1;
+
+        visibility: visible;
+
+        transform: translateY(0);
+
         pointer-events: auto;
     }
 
 
-    /* Cambiar icono */
+    /* =========================
+       CAMBIAR HAMBURGUESA POR X
+    ========================= */
 
     #check1:checked ~ .icons1 #menu-icon1 {
         display: none;
@@ -210,3 +277,27 @@ body{
     }
 }
 
+
+/* =========================
+   CELULARES PEQUEÑOS
+========================= */
+
+@media (max-width: 500px) {
+
+    .header1 {
+        height: 65px;
+        padding: 0 5%;
+    }
+
+    .Logo1 {
+        font-size: 1.6rem;
+    }
+
+    .icons1 {
+        font-size: 1.9rem;
+    }
+
+    .navbar1 {
+        top: 65px;
+    }
+}
