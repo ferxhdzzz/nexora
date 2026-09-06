@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+:root {
+    --primary-color: #032859;
+    --primary-color2: #07598C;
+    --title-color: #0879a6;
+    --text-color: #0a9ebf;
+    --border-color: #4d6cfa;
+    --gradient-color: linear-gradient(90deg, #07598C 0%, #0a9ebf 100%);
+    --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+
+/* =========================
+   NAVBAR NEXORA
+========================= */
+
+.header1 {
+    width: 100%;
+    height: 75px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #dbeafe;
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.08);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.Logo1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #3b82f6;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+
+    transition: 0.3s ease;
+}
+
+.Logo1:hover {
+    color: #2563eb;
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar1 a {
+    position: relative;
+
+    color: #334155;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    padding: 10px 14px;
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Efecto hover */
+
+.navbar1 a:hover {
+    color: #2563eb;
+    background: #eff6ff;
+}
+
+
+/* Línea debajo */
+
+.navbar1 a::after {
+    content: "";
+
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 5px;
+
+    height: 2px;
+    border-radius: 10px;
+
+    background: #60a5fa;
+
+    transform: scaleX(0);
+    transform-origin: center;
+
+    transition: transform 0.3s ease;
+}
+
+.navbar1 a:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* =========================
+   MENU HAMBURGUESA
+========================= */
+
+.icons1 {
+    display: none;
+    font-size: 2rem;
+    color: #2563eb;
+    cursor: pointer;
+}
+
+#check1 {
+    display: none;
+}
+
+#close-icon1 {
+    display: none;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .header1 {
+        padding: 0 5%;
+    }
+
+    .icons1 {
+        display: block;
+    }
+
+    .navbar1 {
+        position: absolute;
+
+        top: 75px;
+        left: 0;
+
+        width: 100%;
+
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 15px 5%;
+
+        box-shadow: 0 10px 25px rgba(59, 130, 246, 0.1);
+
+        transform: translateY(-20px);
+        opacity: 0;
+        pointer-events: none;
+
+        transition: all 0.3s ease;
+    }
+
+    .navbar1 a {
+        width: 100%;
+        text-align: center;
+        padding: 13px;
+    }
+
+
+    /* Mostrar menú */
+
+    #check1:checked ~ .navbar1 {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+
+    /* Cambiar icono */
+
+    #check1:checked ~ .icons1 #menu-icon1 {
+        display: none;
+    }
+
+    #check1:checked ~ .icons1 #close-icon1 {
+        display: block;
+    }
+}
+
