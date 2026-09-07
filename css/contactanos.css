@@ -1,0 +1,230 @@
+/* =========================
+   FORMULARIO DE CONTACTO
+========================= */
+
+.contacto-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 35px 20px;
+}
+
+
+/* =========================
+   TARJETA DEL FORMULARIO
+========================= */
+
+#formularioContacto {
+    background: rgba(255, 255, 255, 0.97);
+
+    padding: 28px 32px;
+
+    border-radius: 18px;
+
+    border: 1px solid #dbeafe;
+
+    box-shadow: 0 12px 35px rgba(3, 40, 89, 0.10);
+
+    transition: 0.3s ease;
+}
+
+#formularioContacto:hover {
+    box-shadow: 0 16px 40px rgba(3, 40, 89, 0.14);
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+#formularioContacto h2 {
+    text-align: center;
+
+    color: #032859;
+
+    font-size: 1.7rem;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* Decoración del título */
+
+#formularioContacto h2::after {
+    content: "";
+
+    display: block;
+
+    width: 45px;
+    height: 3px;
+
+    margin: 8px auto 0;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #356ed2 0%,
+        #0062ff 100%
+    );
+}
+
+
+/* =========================
+   LABELS
+========================= */
+
+#formularioContacto .form-label {
+    color: #032859;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 6px;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+#formularioContacto .form-control {
+    border: 1.5px solid #d5e7f0;
+
+    border-radius: 10px;
+
+    padding: 9px 12px;
+
+    font-size: 13px;
+
+    color: #032859;
+
+    background: #fafdff;
+
+    box-shadow: none;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Placeholder */
+
+#formularioContacto .form-control::placeholder {
+    color: #9aabb5;
+    font-size: 13px;
+}
+
+
+/* =========================
+   INPUT FOCUS
+========================= */
+
+#formularioContacto .form-control:focus {
+    border-color: #0a9ebf;
+
+    background: white;
+
+    box-shadow: 0 0 0 3px rgba(10, 158, 191, 0.10);
+
+    outline: none;
+}
+
+
+/* =========================
+   TEXTAREA
+========================= */
+
+#formularioContacto #mensaje {
+    resize: vertical;
+
+    min-height: 100px;
+}
+
+
+/* =========================
+   ESPACIADO
+========================= */
+
+#formularioContacto .mb-3 {
+    margin-bottom: 17px !important;
+}
+
+
+/* =========================
+   BOTÓN
+========================= */
+
+#enviarBtn {
+    display: block;
+
+    width: auto;
+
+    min-width: 120px;
+
+    margin: 5px auto 0;
+
+    padding: 9px 25px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: linear-gradient(
+        90deg,
+        #356ed2 0%,
+        #0062ff 100%
+    );
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    box-shadow: 0 6px 15px rgba(10, 158, 191, 0.20);
+
+    transition: all 0.3s ease;
+}
+
+
+/* Hover */
+
+#enviarBtn:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 9px 18px rgba(10, 158, 191, 0.30);
+}
+
+
+/* Click */
+
+#enviarBtn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .contacto-container {
+        max-width: 95%;
+
+        padding: 25px 10px;
+    }
+
+    #formularioContacto {
+        padding: 25px 22px;
+    }
+
+    #formularioContacto h2 {
+        font-size: 1.5rem;
+    }
+}

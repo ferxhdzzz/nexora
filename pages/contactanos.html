@@ -8,15 +8,54 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="../javascript/menuPages.js" defer></script> 
   <link rel="stylesheet" href="../css/navbar.css">
+   <link rel="stylesheet" href="../css/contactanos.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 <body>
      <div id="menuContenedor"></div>
    
+<div class="contacto-container">
+    <br>
+      <br>
+       <br>
+        <br>
+         <br>
+         
+      
+        <form id="formularioContacto">
+  <h2>Formulario de Contacto</h2>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" 
+            class="form-control" 
+            id="nombre"
+            name="name"
+             placeholder="Ingrese su nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="correo" name="email" placeholder="nombre@ejemplo.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje de Retroalimentación</label>
+            <textarea class="form-control" id="mensaje" rows="5" name="message" placeholder="Ingrese su mensaje" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="enviarBtn">Enviar</button>
+        </form>
+      </div> 
+    </div>
+      
+
+<br>
+
 </body>
-   
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="../bootstrap/JS/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
     <script src="../javascript/cargarMenuPg.js"></script>
+    <script src="../javascript/form.js"></script>
    
+
+    
 </html>
