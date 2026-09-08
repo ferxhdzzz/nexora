@@ -41,6 +41,14 @@ body {
    HERO
 ========================================= */
 
+
+.isotipo {
+  
+    width:300px;
+  align-items: center;
+  justify-self: center;
+}
+
 .nosotros-hero {
     min-height: 500px;
     padding: 150px 8% 90px;
