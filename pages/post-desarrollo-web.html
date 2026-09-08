@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mejores prácticas en HTML5 y CSS3 - Nexora</title>
+    <link rel="stylesheet" href="../bootstrap/CSS/bootstrap.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../javascript/menuPages.js" defer></script> 
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/blog-post.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="menuContenedor"></div>
+
+    <header class="post-header">
+        <div class="post-header-content">
+            <span class="post-etiqueta">Desarrollo Web</span>
+            <h1 class="post-title">Mejores prácticas en HTML5 y CSS3</h1>
+            <div class="post-meta-header">
+                <span><i class='bx bx-calendar'></i> 18 Oct, 2026</span>
+                <span><i class='bx bx-user'></i> Dev Team</span>
+                <span><i class='bx bx-time-five'></i> 5 min lectura</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="post-body">
+        <article class="post-article">
+            <img src="../Elementos graficos/Imagenes/html-css-collage-concept-with-person.jpg" alt="Collage de HTML y CSS" class="post-main-image">
+            
+            <div class="post-content">
+                <p>Escribir código limpio y mantenible es esencial para cualquier proyecto web, especialmente cuando escalas aplicaciones a nivel empresarial. Hoy repasaremos las mejores prácticas para trabajar con HTML5 y CSS3 moderno.</p>
+                
+                <h2>Semántica ante todo</h2>
+                <p>El uso correcto de las etiquetas semánticas no solo ayuda al SEO de tu sitio web, sino que también mejora la accesibilidad. Etiquetas como <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code> y <code>&lt;header&gt;</code> proporcionan contexto estructural a navegadores y lectores de pantalla.</p>
+                
+                <h3>Organización de tu CSS</h3>
+                <p>El uso de metodologías de arquitectura CSS (como BEM - Block Element Modifier) te permite mantener tus hojas de estilo limpias y evitar colisiones de clases.</p>
+
+                <div class="post-blockquote">
+                    "Un buen CSS es aquel que no necesita ser reescrito cuando añades una nueva página a tu sitio web."
+                </div>
+                
+                <h3>Variables Nativas (Custom Properties)</h3>
+                <p>Las variables de CSS han cambiado las reglas del juego. Permitir la configuración global de colores, espaciados y fuentes hace que implementar esquemas como el 'Modo Oscuro' sea trivial.</p>
+                
+                <ul>
+                    <li>Utiliza siempre la pseudo-clase <code>:root</code> para definir tus variables globales.</li>
+                    <li>Utiliza Flexbox para alineaciones unidimensionales y CSS Grid para layouts complejos bidimensionales.</li>
+                    <li>Evita usar `!important` a menos que sea estrictamente necesario.</li>
+                </ul>
+            </div>
+
+            <div class="post-footer-nav">
+                <a href="blog.html" class="btn-volver-blog"><i class='bx bx-arrow-back'></i> Volver al Blog</a>
+            </div>
+        </article>
+    </section>
+
+    <script src="../bootstrap/JS/bootstrap.bundle.min.js"></script>
+    <script src="../javascript/cargarMenuPg.js"></script>
+</body>
+</html>
