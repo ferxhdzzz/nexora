@@ -3,19 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexora</title>
+    <title>Blog - Nexora</title>
     <link rel="stylesheet" href="../bootstrap/CSS/bootstrap.min.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="../javascript/menuPages.js" defer></script> 
-  <link rel="stylesheet" href="../css/navbar.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../javascript/menuPages.js" defer></script> 
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-     <div id="menuContenedor"></div>
-    
-</body>
-   
-    <script src="../bootstrap/JS/bootstrap.min.js"></script>
+    <!-- Navbar -->
+    <div id="menuContenedor"></div>
+
+    <!-- Hero Section -->
+    <header class="blog-hero">
+        <div class="hero-contenido">
+            <span class="hero-etiqueta"><i class='bx bx-news'></i> Noticias & Novedades</span>
+            <h1>Blog de <span>Nexora</span></h1>
+            <p>Descubre las últimas tendencias en tecnología, inteligencia artificial, desarrollo de software y mucho más. Mantente al día con nuestros expertos.</p>
+        </div>
+    </header>
+
+    <!-- Blog Posts Section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="row g-4">
+                
+                <!-- Post 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="blog-card">
+                        <div class="blog-imagen">
+                            <span class="blog-categoria">Tecnología</span>
+                            <img src="../Elementos graficos/Imagenes/technology-concept-with-futuristic-element.jpg" alt="Concepto de tecnología futurista">
+                        </div>
+                        <div class="blog-contenido">
+                            <div class="blog-meta">
+                                <span><i class='bx bx-calendar'></i> 24 Oct, 2026</span>
+                                <span><i class='bx bx-user'></i> Admin</span>
+                            </div>
+                            <h3 class="blog-titulo">El futuro de la tecnología empresarial</h3>
+                            <p class="blog-descripcion">Explora cómo las innovaciones disruptivas están transformando la manera en que las empresas operan a nivel global.</p>
+                            <div class="blog-footer">
+                                <a href="post-tecnologia.html" class="btn-leer-mas">Leer más <i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="blog-card">
+                        <div class="blog-imagen">
+                            <span class="blog-categoria">Desarrollo Web</span>
+                            <img src="../Elementos graficos/Imagenes/html-css-collage-concept-with-person.jpg" alt="Collage de HTML y CSS">
+                        </div>
+                        <div class="blog-contenido">
+                            <div class="blog-meta">
+                                <span><i class='bx bx-calendar'></i> 18 Oct, 2026</span>
+                                <span><i class='bx bx-user'></i> Dev Team</span>
+                            </div>
+                            <h3 class="blog-titulo">Mejores prácticas en HTML5 y CSS3</h3>
+                            <p class="blog-descripcion">Una guía completa sobre las últimas características de maquetación web y cómo aplicarlas en tus proyectos actuales.</p>
+                            <div class="blog-footer">
+                                <a href="post-desarrollo-web.html" class="btn-leer-mas">Leer más <i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="blog-card">
+                        <div class="blog-imagen">
+                            <span class="blog-categoria">Emprendimiento</span>
+                            <img src="../Elementos graficos/Imagenes/two-young-entrepreneurs-working-computer-reading-email-office.jpg" alt="Jóvenes emprendedores trabajando">
+                        </div>
+                        <div class="blog-contenido">
+                            <div class="blog-meta">
+                                <span><i class='bx bx-calendar'></i> 10 Oct, 2026</span>
+                                <span><i class='bx bx-user'></i> Nexora Insights</span>
+                            </div>
+                            <h3 class="blog-titulo">Estrategias de startups tecnológicas</h3>
+                            <p class="blog-descripcion">Conoce los casos de éxito de startups que han revolucionado el mercado utilizando herramientas de automatización.</p>
+                            <div class="blog-footer">
+                                <a href="post-startups.html" class="btn-leer-mas">Leer más <i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Post 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="blog-card">
+                        <div class="blog-imagen">
+                            <span class="blog-categoria">Inteligencia Artificial</span>
+                            <img src="../Elementos graficos/Imagenes/it-specialist-coding-laptop-programming-artificial-intelligence-close-up.jpg" alt="Especialista en IA programando">
+                        </div>
+                        <div class="blog-contenido">
+                            <div class="blog-meta">
+                                <span><i class='bx bx-calendar'></i> 05 Oct, 2026</span>
+                                <span><i class='bx bx-user'></i> IA Research</span>
+                            </div>
+                            <h3 class="blog-titulo">Programación impulsada por IA</h3>
+                            <p class="blog-descripcion">Descubre cómo los asistentes de código están cambiando el paradigma del desarrollo de software moderno.</p>
+                            <div class="blog-footer">
+                                <a href="post-ia.html" class="btn-leer-mas">Leer más <i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Post 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="blog-card">
+                        <div class="blog-imagen">
+                            <span class="blog-categoria">Innovación</span>
+                            <img src="../Elementos graficos/Imagenes/woman-modern-lab-using-notebook-write-lines-code-ai-applications.jpg" alt="Mujer en laboratorio moderno">
+                        </div>
+                        <div class="blog-contenido">
+                            <div class="blog-meta">
+                                <span><i class='bx bx-calendar'></i> 29 Sep, 2026</span>
+                                <span><i class='bx bx-user'></i> Lab Labs</span>
+                            </div>
+                            <h3 class="blog-titulo">Laboratorios de innovación digital</h3>
+                            <p class="blog-descripcion">La importancia de crear espacios dedicados a la experimentación tecnológica dentro de las corporaciones.</p>
+                            <div class="blog-footer">
+                                <a href="post-innovacion.html" class="btn-leer-mas">Leer más <i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Post 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="blog-card">
+                        <div class="blog-imagen">
+                            <span class="blog-categoria">Negocios</span>
+                            <img src="../Elementos graficos/Imagenes/future-visions-business-technology-concept.jpg" alt="Concepto de tecnología de negocios">
+                        </div>
+                        <div class="blog-contenido">
+                            <div class="blog-meta">
+                                <span><i class='bx bx-calendar'></i> 20 Sep, 2026</span>
+                                <span><i class='bx bx-user'></i> Consultoría</span>
+                            </div>
+                            <h3 class="blog-titulo">Visiones futuras para tu negocio</h3>
+                            <p class="blog-descripcion">Prepárate para la próxima década adoptando infraestructuras escalables y soluciones empresariales robustas.</p>
+                            <div class="blog-footer">
+                                <a href="post-negocios.html" class="btn-leer-mas">Leer más <i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts Bootstrap y Menú -->
+    <script src="../bootstrap/JS/bootstrap.bundle.min.js"></script>
     <script src="../javascript/cargarMenuPg.js"></script>
-   
+</body>
 </html>
