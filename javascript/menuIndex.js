@@ -1,6 +1,6 @@
 function generarMenuIndex(){
     const menuIndex= `<header class="header1">
-    <a href="#" class="Logo1">Nexora</a>
+    <a href="index.html" class="Logo1"><img src="img/nexoralogo.png" alt="Nexora" class="logo-img"></a>
     <input type="checkbox" id="check1">
     <label for="check1" class="icons1">
       <i class='bx bx-menu' id="menu-icon1"></i>
