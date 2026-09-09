@@ -1,6 +1,6 @@
 function generarFooterPages() {
     return `
-        <footer class="bg-dark text-white pt-5 pb-4">
+        <footer class="footer-nexora text-white pt-5 pb-4">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 mb-4">
