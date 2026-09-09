@@ -37,7 +37,7 @@ body{
     align-items: center;
     justify-content: space-between;
 
-    background: rgba(255, 255, 255, 0.95);
+    background: rgb(12, 33, 72);
 
     border-bottom: 1px solid #dbeafe;
 
@@ -86,7 +86,7 @@ body{
 .navbar1 a {
     position: relative;
 
-    color: #334155;
+    color: #ffffff;
 
     text-decoration: none;
 
@@ -300,4 +300,12 @@ body{
     .navbar1 {
         top: 65px;
     }
+}
+
+/* =========================
+   tamaño del logo
+========================= */
+.logo-img {
+    height: 120px;
+    width: auto;
 }
