@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexora</title>
+    <title>FAQ - Nexora</title>
     <link rel="stylesheet" href="../bootstrap/CSS/bootstrap.min.css">
-  <script src="https://cdn.tailwindcss.com"></script>
   <script src="../javascript/menuPages.js" defer></script> 
   <link rel="stylesheet" href="../css/navbar.css">  
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/faq.css">
 
   <!-- favicon -->
     <link rel="icon" type="image/png" href="../assets/brand/Favicon.png">
@@ -19,7 +19,72 @@
 </head>
 <body>
      <div id="menuContenedor"></div>
-    
+
+    <!-- FAQ -->
+    <section class="faq-hero">
+        <h1>Preguntas Frecuentes</h1>
+        <p>Resolvemos las dudas más comunes sobre Nexora</p>
+    </section>
+
+    <main class="faq-section">
+        <div class="accordion" id="faqAccordion">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        ¿Qué servicios ofrece Nexora?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Ofrecemos desarrollo web, soluciones de inteligencia artificial y consultoría tecnológica para negocios y startups.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        ¿Cómo puedo contactar al equipo?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Puedes escribirnos desde la <a href="contactanos.html">página de contacto</a> o a través de nuestras redes sociales.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                        ¿Cuánto tiempo toma un proyecto?
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Depende del alcance, pero un proyecto típico toma entre 2 y 6 semanas desde la planificación hasta la entrega.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                        ¿Trabajan con startups?
+                    </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Sí, tenemos experiencia acompañando startups desde etapas tempranas hasta su escalamiento.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- FAQ -->
+
     <!-- footer -->
 <div id="footerContenedor"></div>
 
