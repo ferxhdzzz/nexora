@@ -1,0 +1,328 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../assets/fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../assets/fonts/OpenSans-Regular.ttf");
+}
+
+:root {
+    --azul-nexora: #1565F9;
+    --azul-oscuro: #0C2148;
+    --azul-claro: #4DA6FF;
+    --blanco: #FFFFFF;
+    --gris-claro: #E7ECF5;
+    --gris-oscuro: #303B4A;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: var(--gris-oscuro);
+}
+
+.home-hero {
+    padding: 150px 7% 90px;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(12, 33, 72, 0.98),
+            rgba(12, 33, 72, 0.91)
+        );
+    color: white;
+}
+
+.home-hero-contenido {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+
+    align-items: center;
+}
+
+.home-hero-texto h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 1.05;
+    margin: 20px 0;
+}
+
+.home-hero-texto h1 span {
+    color: var(--azul-claro);
+}
+
+.home-hero-texto p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 600px;
+    color: #dbeafe;
+}
+
+.home-etiqueta {
+    color: var(--azul-claro);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.85rem;
+}
+
+.home-hero-imagen img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+
+    border-radius: 24px;
+
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+}
+
+.home-botones {
+    margin-top: 35px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-principal,
+.btn-secundario {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.btn-principal {
+    background: var(--azul-nexora);
+    color: white;
+}
+
+.btn-principal:hover {
+    background: var(--azul-claro);
+    color: var(--azul-oscuro);
+
+    transform: translateY(-3px);
+}
+
+.btn-secundario {
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-secundario:hover {
+    background: white;
+    color: var(--azul-oscuro);
+}
+
+.propuesta-section,
+.destacados-section {
+    padding: 90px 7%;
+}
+
+.home-titulo-seccion {
+    max-width: 760px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.home-titulo-seccion h2 {
+    font-family: "Montserrat", sans-serif;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    margin: 12px 0 18px;
+
+    color: var(--azul-oscuro);
+}
+
+.home-titulo-seccion h2 span {
+    color: var(--azul-nexora);
+}
+
+.home-titulo-seccion p {
+    line-height: 1.8;
+}
+
+.propuesta-grid,
+.destacados-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.propuesta-card,
+.destacado-card {
+    padding: 35px;
+
+    border-radius: 18px;
+
+    background: white;
+
+    box-shadow: 0 10px 35px rgba(12, 33, 72, 0.08);
+
+    transition: 0.3s ease;
+}
+
+.propuesta-card:hover,
+.destacado-card:hover {
+    transform: translateY(-8px);
+}
+
+.propuesta-icono,
+.destacado-card i {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 15px;
+
+    background: var(--gris-claro);
+
+    color: var(--azul-nexora);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+
+    margin-bottom: 22px;
+}
+
+.propuesta-card h3,
+.destacado-card h3 {
+    font-family: "Montserrat", sans-serif;
+
+    color: var(--azul-oscuro);
+
+    font-size: 1.3rem;
+
+    margin-bottom: 15px;
+}
+
+.propuesta-card p,
+.destacado-card p {
+    line-height: 1.7;
+}
+
+.destacados-section {
+    background: #f7f9fc;
+}
+
+.home-centro {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.impacto-section {
+    padding: 65px 7%;
+    background: var(--azul-oscuro);
+}
+
+.impacto-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    text-align: center;
+}
+
+.impacto-item {
+    color: white;
+}
+
+.impacto-item strong {
+    display: block;
+
+    font-family: "Montserrat", sans-serif;
+
+    color: var(--azul-claro);
+
+    font-size: 2.5rem;
+
+    margin-bottom: 8px;
+}
+
+.impacto-item span {
+    color: #dbeafe;
+}
+
+.home-cta {
+    padding: 90px 7%;
+
+    text-align: center;
+
+    background: var(--gris-claro);
+}
+
+.home-cta div {
+    max-width: 750px;
+    margin: auto;
+}
+
+.home-cta h2 {
+    font-family: "Montserrat", sans-serif;
+
+    color: var(--azul-oscuro);
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    margin: 15px 0;
+}
+
+.home-cta p {
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+
+    .home-hero-contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .propuesta-grid,
+    .destacados-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .impacto-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .home-hero {
+        padding-top: 120px;
+    }
+
+    .propuesta-grid,
+    .destacados-grid,
+    .impacto-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-hero-imagen img {
+        height: 300px;
+    }
+
+}
