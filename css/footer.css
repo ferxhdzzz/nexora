@@ -1,3 +1,73 @@
+/* =========================================
+   NEXORA - FOOTER
+========================================= */
+
 .footer-nexora {
-    background-color: rgb(12, 33, 72);
+    background-color: #0c2148;
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.footer-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.footer-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.footer-text {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+}
+
+/* Enlaces de navegación */
+.footer-links .footer-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.25s ease, padding-left 0.25s ease;
+    display: inline-block;
+}
+
+.footer-links .footer-link:hover {
+    color: #356ed2;
+    padding-left: 4px;
+}
+
+/* Iconos Sociales */
+.footer-socials .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-socials .social-icon:hover {
+    background-color: #356ed2;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(53, 110, 210, 0.3);
+}
+
+/* Separador y Copyright */
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.15);
+    opacity: 1;
+}
+
+.copyright-text {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
 }
